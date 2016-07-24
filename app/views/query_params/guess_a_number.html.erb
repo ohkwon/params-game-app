@@ -1,0 +1,9 @@
+<h1> Welcome to the Guess-A-Number game!</h1>
+<h2>You guessed <%= @number %><h2>
+<% if @number == @winning_number %>
+  <h2>WINNER! You guessed the right number! Congratulations!</h2>
+<% else %>
+  <h2>You LOSE! You guessed the wrong number! Guess again!</h2>
+<% end %>
+
+<h3>To guess a number, insert your number in the URL after adding "?number=your_number"</h3>

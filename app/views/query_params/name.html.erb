@@ -1,1 +1,4 @@
 <h1><%= @first_name.upcase %> <%=@last_name.upcase %></h1>
+<% if @first_name[0].downcase == "a" %>
+  <p>Hey, your name starts with the first letter of the alphabet!</p>
+<% end %>
